@@ -29,7 +29,16 @@
         android:label="fragment_result"
         tools:layout="@layout/fragment_result" >
         <action
-            android:id="@+id/action_resultFragment_to_mainFragment"
+            android:id="@+id/action_resultFragment_to_endFragment"
+            app:destination="@id/endFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/endFragment"
+        android:name="ro.sapientia.android_6eloadas.quizfragments.EndFragment"
+        android:label="fragment_end"
+        tools:layout="@layout/fragment_end" >
+        <action
+            android:id="@+id/action_endFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
     </fragment>
 </navigation>

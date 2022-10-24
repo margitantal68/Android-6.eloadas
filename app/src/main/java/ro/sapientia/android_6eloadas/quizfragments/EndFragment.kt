@@ -10,10 +10,7 @@ import androidx.navigation.fragment.findNavController
 import ro.sapientia.android_6eloadas.R
 
 
-class ResultFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
+class EndFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,13 +22,12 @@ class ResultFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val view = inflater.inflate(R.layout.fragment_result, container, false)
-
-        val button: Button = view.findViewById(R.id.button7)
+        val view = inflater.inflate(R.layout.fragment_end, container, false)
+        val button: Button = view.findViewById(R.id.button9)
         button.setOnClickListener{
-            this.findNavController().navigate(R.id.action_resultFragment_to_endFragment)
+            this.findNavController().navigate(R.id.action_endFragment_to_mainFragment)
         }
+
         return view
     }
-
 }

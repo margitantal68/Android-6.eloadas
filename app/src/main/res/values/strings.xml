@@ -4,4 +4,6 @@
     <string name="main_fragment">Main fragment</string>
     <string name="question_fragment">Question fragment</string>
     <string name="result_fragment">Result fragment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="end_fragment">End fragment</string>
 </resources>
